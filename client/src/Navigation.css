@@ -1,0 +1,61 @@
+.header__controls {
+    padding: 5.7vh 9.7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand__controls {
+    color: #FFB8CE;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.brand__controls, .brand__controls:hover, .brand__controls:focus, .brand__controls:active {
+    text-decoration: none;
+}
+
+.login__controls {
+    color: #0D0D0D;
+    font-size: 20px;
+    font-weight: 700;
+    height: auto;
+    padding: 0 40px;
+	background-color: #FEFEFE;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #FEFEFE;
+}
+
+.login__controls:hover {
+    color: #FEFEFE;
+    background-color: #0D0D0D;
+    border: none;
+    cursor: pointer;
+}
+
+.signOut__controls {
+    color: #FEFEFE;
+    font-size: 20px;
+    font-weight: 700;
+    height: auto;
+    padding: 0 50px;
+	background-color: transparent;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.signOut__controls:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 880px) {
+    .brand__controls {
+        font-size: 34px;
+    }
+
+    .login__controls {
+        padding: 0 30px;
+    }
+}

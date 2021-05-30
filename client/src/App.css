@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main__controls {
+    background-color: #0D0D0D;
+    outline:none;
+    font-family: 'Poppins';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

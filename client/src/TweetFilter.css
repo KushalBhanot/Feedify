@@ -1,0 +1,20 @@
+.tweetFilter__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.tweetFilter__controls label {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tweetFilter__controls select {
+    padding: 10px 50px;
+    color: #0b0f37;
+    background-color: #FEFEFE;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+}

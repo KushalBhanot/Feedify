@@ -1,0 +1,35 @@
+form {
+    margin-top: 10vh;
+    padding: 0 9.7vw;
+}
+
+.tweetLink__button {
+    display: flex;
+    justify-content: center;
+}
+
+.tweetLink__button button {
+    margin-top: 2vh;
+    color: #9cd612;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 0;
+	width: auto;
+	background: transparent;
+	border: none;
+}
+
+.tweetLink__button button:active {
+    opacity: 0.4;
+}
+
+.tweetLink__button button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 880px) {
+    form {
+        padding: 0;
+    }
+}

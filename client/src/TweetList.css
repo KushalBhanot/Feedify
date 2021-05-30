@@ -1,0 +1,22 @@
+.tweetList__controls {
+    margin-top: 20vh;
+    color: #FEFEFE;
+    padding: 0 9.7vw;
+    min-height: 100vh;
+}
+
+.noTweet__controls {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 0;
+    color: #f80157;
+    font-size: 36px;
+    font-weight: 700;
+    min-height: 40vh;
+}
+
+@media only screen and (max-width: 880px) {
+    .noTweet__controls {
+        font-size: 28px;
+    }
+}

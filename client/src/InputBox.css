@@ -1,0 +1,49 @@
+.inputBox__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inputBox__text {
+    font-size: 32px;
+    color: #FEFEFE;
+    margin-right: 50px;
+}
+
+.inputBox__controls h3 {
+    cursor: default;
+}
+
+.inputBox__controls input {
+    margin: auto 0;
+    height: 7vh;
+    width: 20vw;
+    outline: none;
+    background-color: #0D0D0D;
+	border: 1px solid #FEFEFE;
+	border-radius: 10px;
+    color: #FEFEFE;
+}
+
+.inputBox__controls input::placeholder {
+    color: #D3D3D3;
+    text-align: center;
+}
+
+.inputBox__controls input:focus {
+    border-color: #9cd612;
+}
+
+@media only screen and (max-width: 880px) {
+    .inputBox__controls h3 {
+        font-size: 28px;
+    }
+
+    .inputBox__controls input::placeholder {
+        font-size: 12px;
+    }
+
+    .inputBox__controls input {
+        width: 24vw;
+    }
+}
