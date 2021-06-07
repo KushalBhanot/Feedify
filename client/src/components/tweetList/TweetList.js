@@ -37,7 +37,7 @@ function TweetList({ items }) {
                             <h1>{tweet.tag_name}</h1>
                             <div className="tweetDisplay">
                                 <TweetEmbed id={tweet.tweet_url.split("/")[5]} />
-                                <TweetControls />
+                                {/* <TweetControls /> */}
                             </div>
                         </>
                     ))}
@@ -62,7 +62,7 @@ function TweetList({ items }) {
                             <h1>{tweet.tag_name}</h1>
                             <div className="tweetDisplay">
                                 <TweetEmbed id={tweet.tweet_url.split("/")[5]} />
-                                <TweetControls />
+                                {/* <TweetControls /> */}
                             </div>
                         </>
                     ))}
