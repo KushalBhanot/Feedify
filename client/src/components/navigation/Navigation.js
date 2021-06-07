@@ -1,25 +1,13 @@
 import Navbar from 'react-bootstrap/Navbar';
 import './Navigation.css';
-import googleAuth from './service/auth';
-import firebase from './config/firebase-config';
-import { googleProvider } from './config/authMethod';
+import googleAuth from '../../service/auth';
+import firebase from '../../config/firebase-config';
+import { googleProvider } from '../../config/authMethod';
 import Axios from 'axios';
-// import { Auth } from './context/authContext';
 
 function Navigation(props) {
-    // const { state, dispatch } = useContext(Auth);
-
-    // const [isLoggedIn, setIsLoggedIn] = useState(false);
-
     const loginClickHandler = async (provider) => {
-        // setIsLoggedIn(true);
-
         const res = await googleAuth(provider);
-        // auth
-        //     .signInWithPopup(provider)
-        //     .catch((error) => {
-        //         alert(error.message);
-        //     })
 
         console.log(res);
 
@@ -34,8 +22,6 @@ function Navigation(props) {
                 uid: user.uid
             }
 
-            // dispatch({ type: "LOGIN", payload: userData });
-
             console.log(userData);
 
             Axios.post(`http://localhost:3002/add/user`, userData)
@@ -46,8 +32,6 @@ function Navigation(props) {
     }
 
     const signOutClickHandler = async (provider) => {
-        // setIsLoggedIn(false);
-
         firebase.auth().signOut().then(() => {
             localStorage.removeItem("user_id");
             window.location.reload();
@@ -65,7 +49,6 @@ function Navigation(props) {
                 <button onClick={() => signOutClickHandler(googleProvider)} className="signOut__controls">Sign Out</button>
                 :
                 <button onClick={() => loginClickHandler(googleProvider)} className="login__controls">Login</button>}
-            {/* {isLoggedIn && <button onClick={() => signOutClickHandler(googleProvider)} className="signOut__controls">Sign Out</button>} */}
         </Navbar>
     );
 }

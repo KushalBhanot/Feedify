@@ -1,8 +1,8 @@
 import './App.css';
-import Navigation from './Navigation';
-import TweetForm from './TweetForm';
-import Hero from './Hero';
-import TweetList from './TweetList';
+import Navigation from './components/navigation/Navigation';
+import TweetForm from './components/tweetForm/TweetForm';
+import Hero from './components/hero/Hero';
+import TweetList from './components/tweetList/TweetList';
 import { useState, useEffect } from 'react';
 import Axios from 'axios';
 

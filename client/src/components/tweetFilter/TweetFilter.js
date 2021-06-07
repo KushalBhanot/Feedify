@@ -1,9 +1,6 @@
 import './TweetFilter.css';
-import { useState } from 'react';
 
 function TweetFilter(props) {
-    const [tagToBeDisplayed, setTagToBeDisplayed] = useState('');
-
     const dropdownChangeHandler = (event) => {
         console.log("Dropdown value changed");
         props.onChangeFilter(event.target.value);

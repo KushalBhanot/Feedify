@@ -1,7 +1,8 @@
 import './TweetList.css';
 import TweetEmbed from 'react-tweet-embed';
-import TweetFilter from './TweetFilter';
+import TweetFilter from '../tweetFilter/TweetFilter';
 import { useState } from 'react';
+import TweetControls from './TweetControls';
 
 function TweetList({ items }) {
     const [filteredTagName, setFilteredTagName] = useState('');
@@ -34,10 +35,15 @@ function TweetList({ items }) {
                     {items.map((tweet) => (
                         <>
                             <h1>{tweet.tag_name}</h1>
-                            <TweetEmbed id={tweet.tweet_url.split("/")[5]} />
+                            <div className="tweetDisplay">
+                                <TweetEmbed id={tweet.tweet_url.split("/")[5]} />
+                                <TweetControls />
+                            </div>
                         </>
                     ))}
                 </ul>
+
+                <TweetControls />
             </div>
         );
     }
@@ -54,9 +60,13 @@ function TweetList({ items }) {
                     {filteredTweets.map((tweet) => (
                         <>
                             <h1>{tweet.tag_name}</h1>
-                            <TweetEmbed id={tweet.tweet_url.split("/")[5]} />
+                            <div className="tweetDisplay">
+                                <TweetEmbed id={tweet.tweet_url.split("/")[5]} />
+                                <TweetControls />
+                            </div>
                         </>
                     ))}
+
                 </ul>
             </div>
         );

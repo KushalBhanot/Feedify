@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import './TweetForm.css';
-import './InputBox.css';
+import '../UI/InputBox.css';
 
 import Axios from 'axios';
 
@@ -38,16 +38,6 @@ function TweetForm() {
         setInputLink('');
         setInputTag('');
     };
-
-    // const saveTweetData = (inputTweetData) => {
-    //     const tweetData = {
-    //         id: new Date().getTime().toString(),
-    //         ...inputTweetData,
-    //     };
-    //     Axios.post('/post/tweet', tweetData);
-
-    //     props.onAddTweet(tweetData);
-    // };
 
     return (
         <form onSubmit={submitHandler}>
