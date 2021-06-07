@@ -1,10 +1,5 @@
 # Feedify ⚡
 
-##### [Desktop]
-<img src="" width="45%">&nbsp;&nbsp;&nbsp;&nbsp;<img src="" width="45%">
-##### [Mobile]
-<img src="" width="20%">
-
 **Features:** Share your TweetBucket with others
 
 **Inspiration for the project:** 
@@ -13,6 +8,11 @@ Presenting, Feedify!
 Now you can save tweets by tags and read whenever you want!
 
 🚀 Started coding on May 18, 2021 (Monday)
+
+##### [Desktop]
+<img src="https://github.com/KushalBhanot/Feedify/blob/master/Screenshots/Desktop1.png" width="45%">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/KushalBhanot/Feedify/blob/master/Screenshots/Desktop2.png" width="45%">
+##### [Mobile]
+<img src="https://github.com/KushalBhanot/Feedify/blob/master/Screenshots/Mobile1.png" width="20%">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/KushalBhanot/Feedify/blob/master/Screenshots/Mobile2.png" width="20%">
 
 **Monday:** Made Navbar, TweetLink, TagName components, Tried embedding a tweet using official docs
 
